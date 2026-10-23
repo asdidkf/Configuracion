@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="fondo_pantalla">#FFFCF4FF</color>
+    <color name="azul_principal">#FF2B3F8C</color>
+    <color name="fondo_boton_atras">#FFC9D3F0</color>
+    <color name="divisor">#FFD9D9D9</color>
+    <color name="texto">#FF1C1B1F</color>
+    <color name="subtitulo">#FF49454F</color>
+    <color name="switch_off_thumb">#FF79747E</color>
+    <color name="switch_off_track">#FFE6E0E9</color>
+    <color name="blanco">#FFFFFFFF</color>
+</resources>

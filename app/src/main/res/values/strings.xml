@@ -21,4 +21,9 @@
     <string name="permisos_subtitulo">Modificar los permisos que tiene la app</string>
     <string name="seccion_ayuda">Ayuda</string>
     <string name="reportar_problema">Reportar un problema</string>
+    <string name="tipo_usuario_seleccion">Selecciona una opción</string>
+    <string name="tipo_usuario_aspirante_titulo">Aspirante</string>
+    <string name="tipo_usuario_aspirante_subtitulo">Estoy buscando aplicar a una beca</string>
+    <string name="tipo_usuario_becario_titulo">Becario</string>
+    <string name="tipo_usuario_becario_subtitulo">Ya cuento con una beca</string>
 </resources>

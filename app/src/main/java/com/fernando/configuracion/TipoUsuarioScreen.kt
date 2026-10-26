@@ -38,10 +38,10 @@ import androidx.compose.ui.unit.sp
 @Composable
 fun TipoUsuarioScreen(
     modifier: Modifier = Modifier,
+    seleccion: Int,
+    onSeleccionChange: (Int) -> Unit,
     onBackClick: () -> Unit = {}
 ) {
-    var seleccion by rememberSaveable { mutableStateOf(0) }
-
     Column(
         modifier = modifier
             .fillMaxSize()
@@ -91,14 +91,14 @@ fun TipoUsuarioScreen(
             titulo = stringResource(R.string.tipo_usuario_aspirante_titulo),
             subtitulo = stringResource(R.string.tipo_usuario_aspirante_subtitulo),
             seleccionado = seleccion == 0,
-            onClick = { seleccion = 0 }
+            onClick = { onSeleccionChange(0) }
         )
         Divisor()
         ItemOpcion(
             titulo = stringResource(R.string.tipo_usuario_becario_titulo),
             subtitulo = stringResource(R.string.tipo_usuario_becario_subtitulo),
             seleccionado = seleccion == 1,
-            onClick = { seleccion = 1 }
+            onClick = { onSeleccionChange(1) }
         )
         Divisor()
     }
@@ -154,6 +154,6 @@ private fun Divisor() {
 @Composable
 private fun TipoUsuarioScreenPreview() {
     MaterialTheme {
-        TipoUsuarioScreen()
+        TipoUsuarioScreen(seleccion = 0, onSeleccionChange = {})
     }
 }
